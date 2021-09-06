@@ -1,0 +1,73 @@
+﻿
+@model TJTest.Models.TJTestViewModel
+@using System
+@using System.Web.Helpers
+@using System.Web.Mvc
+@using System.Web.WebPages
+@using System.IdentityModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;700;900&display=swap" rel="stylesheet">
+
+
+<div class="home">
+    <h1>TJTest</h1>
+    <div class="all">
+        <div class="select-client">
+            <h2>Search Client</h2>
+
+            <input type="text" placeholder="Client" class="name" id="txtClientName">
+
+            <div class="buttons">
+                <input type="submit" class="submit" value="Search" onclick="SearchClient()">
+                <input type="submit" class="submit" value="Register" onclick="RegisterNewClient()" />
+            </div>
+
+           
+          
+                <div class="result" id="result-client" style="visibility:hidden;">
+                    <table>
+                        <tr>
+                            <td>
+                                <label id="idClientlbl"></label>
+                            </td>
+                            <td>
+                                <label id="clientNamelbl"></label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+        </div>
+        <div class="register-product">
+            <h2>Register Product</h2>
+            <input type="text" placeholder="Product" class="product txt">
+            <input type="text" placeholder="Price" readonly class="txt" id="price">
+            <input type="submit" class="submit" value="Register Product">
+        </div>
+        <div class="register-order">
+            <h2>Register Order</h2>
+            <input type="text" placeholder="Product" class="product txt">
+            <input type="text" placeholder="Price" readonly class="txt" id="price">
+            <input type="text" placeholder="Amount" class="txt" id="amount">
+            <input type="text" placeholder="Total Price" readonly class="txt" id="total-price">
+            <input type="submit" class="submit" value="Register Order">
+        </div>
+        <div class="search-order">
+            <h2>Search Order</h2>
+            <input type="text" placeholder="Client" class="name txt"><br><br>
+            <input type="text" placeholder="Product" class="product txt"><br><br>
+            <input type="submit" class="submit" value="Search">
+
+            <div class="result" id="result-order">
+
+            </div>
+        </div>
+    </div>
+
+</div>

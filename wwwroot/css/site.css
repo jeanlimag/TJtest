@@ -1,0 +1,73 @@
+﻿body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Azeret Mono', monospace;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+h1 {
+    position: relative;
+    background: #57b2d6;
+    color: #fcfbfb;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Azeret Mono', monospace;
+}
+
+h2 {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.search-order, .register-order, .register-product, .select-client {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    padding: 15px 0;
+}
+
+.submit {
+    margin: 15px;
+    width: 170px;
+    justify-self: center;
+    align-self: flex-end;
+    padding: 5px;
+    font-size: 15px;
+    background: #57b2d6;
+    border: none;
+    color: #fcfbfb;
+    box-shadow: 2px 1px 5px #808080;
+    text-shadow: 2px 1px 5px #808080;
+}
+
+.txt {
+    margin: 8px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+}
